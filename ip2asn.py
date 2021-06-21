@@ -3,13 +3,14 @@ import pickle
 import radix
 import json
 import bz2
+import os
 
 class ip2asn:
     def __init__(self, db="db/latest.pickle", ixp=None):
-
         self.db = db
         self.asname = {}
-        self.rtree = pickle.load(bz2.BZ2File(db, "rb"))
+        temp = bz2.BZ2File(db, "rb")
+        self.rtree = pickle.load(temp)
 
         if ixp is not None:
             with open(ixp) as fi:
@@ -84,13 +85,21 @@ class ip2asn:
             return self.asname[asn]
         else:
             return ""
+    
+def verify_date(date): 
+    filename = "db/rib."+date+"01.pickle.bz2"
+    if not os.path.exists(filename):
+        year = date[0:3]
+        month = date[4:5]
+        os.system("python3 monthlydb.py " + year + " " + month)
+
 
 if __name__ == "__main__":
     
     if len(sys.argv)<3:
         print("usage: %s yyyymm ip")
         sys.exit()
-    
+    verify_date(sys.argv[1])
     ia = ip2asn("db/rib.%s01.pickle.bz2" % sys.argv[1])
     asn = ia.ip2asn(sys.argv[2])
     prefix = ia.ip2prefix(sys.argv[2])
