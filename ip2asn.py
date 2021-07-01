@@ -89,9 +89,11 @@ class ip2asn:
 def verify_date(date): 
     filename = "db/rib."+date+"01.pickle.bz2"
     if not os.path.exists(filename):
-        year = date[0:3]
-        month = date[4:5]
-        os.system("python3 monthlydb.py " + year + " " + month)
+        year = date[:4]
+        month = date[4:]
+        cmd = "python3 monthlydb.py " + year + " " + month
+        print(cmd)
+        os.system(cmd)
 
 
 if __name__ == "__main__":
