@@ -13,7 +13,7 @@ def all_asn():
 
 def writeToFile(year, month):
     f = open("datenumasn.txt", "a")
-    f.write(year +"-"+ month + "-01  " + all_asn())
+    f.write(str(year) +"-"+ str(month) + "-01  " + all_asn())
     f.close()
 
 
