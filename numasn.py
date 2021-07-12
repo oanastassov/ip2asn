@@ -4,6 +4,9 @@ import sys
 
 def all_asn():
     #""" Find all the ASN in the radix tree"""
+    db="db/latest.pickle"
+    temp = bz2.BZ2File(db, "rb")
+    rtree = pickle.load(temp)
     nodes = rtree.nodes() 
     asns = {}
     for rnode in nodes:
