@@ -1,6 +1,8 @@
 
 import os
 import sys
+import pickle
+import bz2
 
 def all_asn():
     #""" Find all the ASN in the radix tree"""
