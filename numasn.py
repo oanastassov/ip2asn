@@ -1,24 +1,23 @@
-
 import os
 import sys
 import pickle
 import bz2
 
-def all_asn():
+def all_asn(year, month):
     #""" Find all the ASN in the radix tree"""
-    db="db/latest.pickle"
+    db="db/rib.%d%02d01.pickle.bz2" %(year,month)
     temp = bz2.BZ2File(db, "rb")
     rtree = pickle.load(temp)
     nodes = rtree.nodes() 
-    asns = {}
-    for rnode in nodes:
-        asns.add(rnode.data["as"])
+    asns = set()
+    for rnode in nodes: 
+        asns.add(rnode.data["as"]) 
     size = len(asns)
     return size
 
 def writeToFile(year, month):
     f = open("datenumasn.txt", "a")
-    f.write(str(year) +"-"+ str(month) + "-01  " + all_asn())
+    f.write(str(year) +"-"+ str(month).zfill(2) + "-01  " + str(all_asn(year, month)) + "\n")
     f.close()
 
 
@@ -36,16 +35,4 @@ for i in range(10):
         month = startmonth + j
         verify_date(year, month)
         writeToFile(year, month)
-
-
-
-
-#loop through each year
-#loop through each month
-# hard code the day
-# verify date 
-# if no date call monthly db
-# find the number of nodes in the radix tree and add to set 
-# write the date and # of asns to file
-
-# 2020-12-01   #asns
+        print("The " + str(year) +" and " + str(month) + " is completed")
