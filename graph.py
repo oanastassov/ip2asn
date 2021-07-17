@@ -5,5 +5,5 @@ with open('datenumasn.txt') as d:
     lines = d.readlines()
     x = [line.split()[0] for line in lines]
     y = [line.split()[1] for line in lines]
-plt.bar(x,y)
+plt.plot(x,y)
 plt.show()
