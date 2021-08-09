@@ -35,16 +35,11 @@ def calc_change(map, output, year):
         index = len(ip)
         if index > 50: 
             continue 
-        data[index] += 1 #adds number of changes to the array
+        data[index] += 1 
     size = len(map)
     for i in range(50):
-        output[year].append(data[i]/size)  #gets percentage and puts it in output array
+        output[year].append(data[i]/size) 
     return output
-
-# def writeToFile(year, month, map):
-#     f = open("averageownership.txt", "a")
-#     f.write("Average number of ip's owned by an ASN in year " + str(year) + " : " + str(calculate_average(map)) + "\n" + "Average lenth of ip ownership by an ASN in year " + str(year) + " : " + str(timeowned_average(map)) + "\n")
-#     f.close()
 
 def to_graph(output, year):
     x = [i for i in range(50)]
@@ -54,7 +49,7 @@ def to_graph(output, year):
 startyear = int(sys.argv[1]) - 5
 startmonth = int(sys.argv[2])
 map = {}
-output = [[]for i in range(5)] #[[0 for i in range (5)] for j in range (50)]# makes 2d array of correct size with 0s, then replaces
+output = [[]for i in range(5)] 
 for i in range(5):
     year = startyear + i
     for j in range(12):
@@ -65,9 +60,3 @@ for i in range(5):
     #writeToFile(year, month, map)
     output = calc_change(map, output, i)
     to_graph(output, i)
-
-# % hasnt changed at all
-# graphs of when has changed
-# x = range of changes
-# y = franctions of ips
-# make a new graph for each year
