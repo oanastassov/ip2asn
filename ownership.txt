@@ -1,0 +1,65 @@
+Year 2016 :  Average change: 1.9600526807028805e-05
+Year 2016 : percentage of ips that changed 0 times: 0.0
+percentage of ips that changed 9 times is: 0.005431362808411989
+percentage of ips that changed 10 times is: 0.012849809571121047
+percentage of ips that changed 11 times is: 0.21751945686371918
+percentage of ips that changed 12 times is: 1.9537009438648782
+percentage of ips that changed 13 times is: 9.337837390296407
+percentage of ips that changed 14 times is: 26.55830435502567
+percentage of ips that changed 15 times is: 36.48445106805763
+percentage of ips that changed 16 times is: 22.533134624937905
+percentage of ips that changed 17 times is: 0.6986587183308495
+percentage of ips that changed 18 times is: 1.0661367776121875
+percentage of ips that changed 19 times is: 1.1319754926312304
+Year 2017 :  Average change: 1.6451711101085387e-05
+Year 2017 : percentage of ips that changed 0 times: 0.0
+percentage of ips that changed 9 times is: 0.0046575275625827545
+percentage of ips that changed 10 times is: 0.012087392960036195
+percentage of ips that changed 11 times is: 0.20559657383401017
+percentage of ips that changed 12 times is: 1.8666705109751311
+percentage of ips that changed 13 times is: 9.049686947611686
+percentage of ips that changed 14 times is: 26.178409920090136
+percentage of ips that changed 15 times is: 36.265838366050616
+percentage of ips that changed 16 times is: 22.76410953617679
+percentage of ips that changed 17 times is: 0.8381331742381062
+percentage of ips that changed 18 times is: 1.3516810347695523
+percentage of ips that changed 19 times is: 1.463129015731354
+Year 2018 :  Average change: 1.4146948431540638e-05
+Year 2018 : percentage of ips that changed 0 times: 0.0
+percentage of ips that changed 9 times is: 0.004367620738602646
+percentage of ips that changed 10 times is: 0.011203896677285049
+percentage of ips that changed 11 times is: 0.19473891597552231
+percentage of ips that changed 12 times is: 1.7699308301802594
+percentage of ips that changed 13 times is: 8.737045494466889
+percentage of ips that changed 14 times is: 25.80570734092603
+percentage of ips that changed 15 times is: 35.705679331184335
+percentage of ips that changed 16 times is: 22.670420288547813
+percentage of ips that changed 17 times is: 0.9686623212005261
+percentage of ips that changed 18 times is: 1.7222667951633348
+percentage of ips that changed 19 times is: 2.409977164939399
+Year 2019 :  Average change: 1.228902237035796e-05
+Year 2019 : percentage of ips that changed 0 times: 0.0
+percentage of ips that changed 9 times is: 0.004026224691274842
+percentage of ips that changed 10 times is: 0.010024477802765934
+percentage of ips that changed 11 times is: 0.18389165018516526
+percentage of ips that changed 12 times is: 1.7174724183066685
+percentage of ips that changed 13 times is: 8.5851435595606
+percentage of ips that changed 14 times is: 25.58887644502437
+percentage of ips that changed 15 times is: 35.08222125994539
+percentage of ips that changed 16 times is: 22.134539995612236
+percentage of ips that changed 17 times is: 1.2041698540945474
+percentage of ips that changed 18 times is: 2.180159586399906
+percentage of ips that changed 19 times is: 3.309474528377078
+Year 2020 :  Average change: 1.0862054754466147e-05
+Year 2020 : percentage of ips that changed 0 times: 0.0
+percentage of ips that changed 9 times is: 0.003691318886524515
+percentage of ips that changed 10 times is: 0.010567305047697631
+percentage of ips that changed 11 times is: 0.17725568535487327
+percentage of ips that changed 12 times is: 1.6518290123188721
+percentage of ips that changed 13 times is: 8.370391279801972
+percentage of ips that changed 14 times is: 25.354945643519926
+percentage of ips that changed 15 times is: 34.512239255366886
+percentage of ips that changed 16 times is: 21.903128211809324
+percentage of ips that changed 17 times is: 1.3599976838783456
+percentage of ips that changed 18 times is: 2.688510589018688
+percentage of ips that changed 19 times is: 3.9674440149968877
